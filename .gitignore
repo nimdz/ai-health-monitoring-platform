@@ -1,0 +1,74 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+
+# dotenv environment files
+.env
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# TypeScript
+*.tsbuildinfo
+
+# React
+/build
+/.pnp
+.pnp.js
+.cache/
+.vite/
+.next/
+out/
+coverage/
+public/static/
+
+# Optional npm cache directory
+.npm/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+
+# AWS credentials
+.aws/
+
+# Python/ML (if using ML in microservices)
+__pycache__/
+*.py[cod]
+*.pkl
+*.h5
+*.pt
+*.onnx
+*.joblib
+*.ipynb_checkpoints
+
+# Docker
+**/docker-compose.override.yml
+**/docker-data/
+*.tar
+
+# Database
+*.sqlite
+*.db
+*.db-journal
+
+# OS junk
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# ML model artifacts (if generated)
+models/
+checkpoints/
+runs/
+inference_output/
