@@ -18,5 +18,4 @@ This project is part of an AI Health Monitoring Platform, focused on providing h
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/ai-health-monitoring-platform.git
-cd ai-health-monitoring-platform/user-service
+git clone https://github.com/nimdz/ai-health-monitoring-platform.git
