@@ -1,12 +1,17 @@
-require("dotenv").config();
 const express = require("express");
 const app = express();
+const sequelize = require("./db");
 const authRoutes = require("./routes/authRoutes");
+const userRoutes = require("./routes/userRoutes");
 
 app.use(express.json());
-app.use("/api/auth", authRoutes);
+app.use("/auth", authRoutes);
+app.use("/user", userRoutes);
 
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`User service running on port ${PORT}`);
+const PORT = process.env.PORT || 3000;
+sequelize.sync().then(() => {
+  console.log("Database synced");
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
 });
